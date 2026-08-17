@@ -9,6 +9,10 @@
   <style>
     :root{--ink:#0b1f3a;--orange:#c65d21;--cream:#fffaf4;--line:#cbd7e5;--muted:#62748a}.page{background:var(--cream);color:var(--ink);min-height:100vh}.navbar{background:var(--ink)}.brand-mark{width:34px;height:34px;display:grid;place-items:center;border:1px solid #ffb985;border-radius:.5rem;color:#ffb985;font-weight:800}.hero{background:linear-gradient(135deg,var(--ink),#184572);color:white;border-radius:1.25rem;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,185,133,.35);border-radius:50%;right:-90px;top:-140px}.eyebrow{color:#ffb985;letter-spacing:.14em;font-size:.7rem;font-weight:800}.chapter-nav{max-height:74vh;overflow:auto}.chapter-nav .list-group-item{border-color:var(--line);cursor:pointer}.chapter-nav .list-group-item.active{background:var(--orange);border-color:var(--orange)}.card{border-color:var(--line);border-radius:1rem;box-shadow:0 .25rem 1rem rgba(11,31,58,.06)}.code{background:#111e31;color:#edf4fc;border-radius:.75rem;padding:1rem;white-space:pre-wrap;min-height:120px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86rem}.nav-pills .nav-link{color:var(--ink);border:1px solid var(--line);font-weight:700;margin:.15rem}.nav-pills .nav-link.active,.btn-orange{background:var(--orange);border-color:var(--orange);color:#fff}.btn-orange:hover{background:#a94d1b;border-color:#a94d1b;color:#fff}.vocab{border-left:4px solid var(--orange);background:#fff7f2}.scene-card{transition:transform .18s,box-shadow .18s}.scene-card:hover{transform:translateY(-3px);box-shadow:0 .6rem 1.4rem rgba(11,31,58,.11)}.memory-shell{background:#102742;color:#edf6ff;border-radius:1rem}.memory-line{font-family:ui-monospace,monospace;padding:.35rem .5rem;border-radius:.35rem}.memory-line.active{background:var(--orange);font-weight:700}.memory-station{border:1px solid rgba(255,255,255,.25);border-radius:.65rem;padding:.6rem;text-align:center;min-height:74px}.memory-station.active{background:rgba(198,93,33,.35);border-color:#ffb985}.memory-token{width:18px;height:18px;background:#ffb985;border-radius:50%;box-shadow:0 0 0 .35rem rgba(255,185,133,.15);animation:move .75s ease-in-out infinite alternate}.struct-stage{background:#f2f7fc;border:1px dashed #9eb5cd;border-radius:.8rem;min-height:190px;display:flex;align-items:center;justify-content:center;padding:1rem;overflow:hidden}.cell{width:54px;height:66px;border:2px solid #51708e;border-radius:.55rem;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:.25rem}.cell.active{border-color:var(--orange);background:#fff0e8;transform:translateY(-8px);box-shadow:0 0 0 .25rem rgba(198,93,33,.14)}.stack{display:flex;flex-direction:column-reverse;align-items:center}.queue{display:flex;align-items:center}.tree{position:relative;width:320px;height:160px}.tree svg{position:absolute;width:100%;height:100%;inset:0}.node{position:absolute;width:70px;height:42px;border:2px solid #50708f;background:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700}.node.root{top:4px;left:125px}.node.left{bottom:2px;left:35px}.node.right{bottom:2px;right:35px}.node.active{border-color:var(--orange);background:#fff0e8;box-shadow:0 0 0 .3rem rgba(198,93,33,.14)}.call-stack{font-family:ui-monospace,monospace;font-size:.78rem;border-left:4px solid var(--orange);background:#fff;border-radius:.5rem;padding:.5rem}.profile{background:var(--ink);color:white;border-radius:1rem}.portfolio-item{border-left:4px solid var(--orange)}.footer{background:var(--ink);color:#dbe9f5}@keyframes move{to{transform:translateX(36px)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}@media(max-width:991px){.chapter-nav{max-height:210px}.sticky-lg-top{position:static!important}}
   </style>
+<style id="execution-visual-style">
+.source-list{max-height:420px;overflow:auto;padding-right:.2rem}.phase-chip{display:inline-block;padding:.35rem .65rem;border:1px solid #ffb985;border-radius:999px;color:#ffcfac;background:rgba(198,93,33,.24);font-size:.78rem;font-weight:800;text-transform:uppercase}.execution-card{background:#fff;color:#0b1f3a;border-radius:.8rem;padding:.8rem;border-left:4px solid #c65d21}.execution-empty{margin:0;color:#62748a;font-size:.9rem}.memory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:.5rem}.memory-slot{position:relative;border:1px solid #cbd7e5;border-radius:.6rem;background:#f8fbff;padding:.55rem;display:flex;flex-direction:column;min-height:82px;transition:transform .2s cubic-bezier(.23,1,.32,1),box-shadow .2s}.memory-slot.changed{border-color:#c65d21;background:#fff0e8;box-shadow:0 0 0 .2rem rgba(198,93,33,.16);transform:translateY(-3px)}.memory-name{font-family:ui-monospace,monospace;font-size:.78rem;color:#0b1f3a;font-weight:800}.memory-type{align-self:flex-start;margin:.18rem 0;padding:.05rem .32rem;border-radius:999px;background:#e9f1f8;color:#49667f;font-size:.68rem}.memory-slot strong{font-size:.88rem;overflow-wrap:anywhere}.io-panel{height:100%;border-radius:.75rem;padding:.7rem;background:#fff;color:#0b1f3a;border:1px solid #cbd7e5}.input-panel{border-left:4px solid #ffb985}.terminal{background:#071525;color:#dff5e5;border-color:#31546e;font-family:ui-monospace,monospace}.terminal .panel-label{color:#9dd1ab}.panel-label{font-weight:800;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.35rem}.test-banner{margin-top:.65rem;padding:.55rem .65rem;border-radius:.55rem;font-size:.88rem}.test-banner.true{background:#e9f8ef;border-left:4px solid #1f8a55;color:#155d39}.test-banner.false{background:#fff0ed;border-left:4px solid #c65d21;color:#843614}.test-banner.neutral{background:#f2f7fc;border-left:4px solid #9eb5cd;color:#526d87}.flow-rail{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;font-size:.72rem;color:#dbe9f5}.rail-node{display:grid;place-items:center;width:22px;height:22px;border:1px solid rgba(255,255,255,.35);border-radius:50%;font-weight:800}.rail-node.active{background:#c65d21;border-color:#ffb985}.rail-arrow{color:#ffb985}.cv-block{background:rgba(255,255,255,.96);color:#0b1f3a;border-radius:.75rem;padding:1rem}.cv-block h3{color:#0b1f3a}.cv-callout{padding:.85rem;border-left:4px solid #ffb985;background:rgba(255,255,255,.1);border-radius:.5rem;font-size:.88rem}.profile .portfolio-item{border-left:4px solid #c65d21}@media(prefers-reduced-motion:no-preference){.memory-slot.changed{animation:memoryPulse .7s cubic-bezier(.23,1,.32,1) 1}.input-panel{animation:entryGlow .65s ease-out 1}.terminal{animation:entryGlow .65s ease-out 1}@keyframes memoryPulse{0%{opacity:.55;transform:translateY(7px)}100%{opacity:1;transform:translateY(-3px)}}@keyframes entryGlow{0%{opacity:.45;transform:translateY(5px)}100%{opacity:1;transform:translateY(0)}}}@media(max-width:575px){.flow-rail{font-size:.66rem}.memory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.source-list{max-height:280px}}
+</style>
+
 </head>
 <body class="page">
   <nav class="navbar navbar-dark sticky-top"><div class="container py-2"><a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#top"><span class="brand-mark">Py</span><span>Berkane Lab · Python</span></a><div class="d-flex gap-2"><button id="language" class="btn btn-sm btn-outline-light">English</button><a href="#profile" class="btn btn-sm btn-orange">CV · Portfolio</a></div></div></nav>
@@ -26,14 +30,387 @@
   function course(c){return '<div class="row g-3"><div class="col-md-7"><div class="card h-100"><div class="card-body"><p class="eyebrow">'+U('objective')+'</p><p>'+h(T(c.body))+'</p><p class="eyebrow mt-4">'+U('walk')+'</p><ol>'+c.trace.map(x=>'<li>'+h(T(x))+'</li>').join('')+'</ol></div></div></div><div class="col-md-5"><div class="card vocab h-100"><div class="card-body"><p class="eyebrow">'+U('vocabulary')+'</p>'+c.vocab.map(x=>'<p><strong>'+h(T(x.word))+'</strong><br><span class="text-secondary">'+h(T(x.definition))+'</span></p>').join('')+'</div></div></div></div><div class="card mt-3"><div class="card-body"><p class="eyebrow">'+U('case')+'</p><h3 class="h5">'+h(T(c.situation))+'</h3><p>'+h(T(c.explanation))+'</p><p class="eyebrow">'+U('solution')+'</p><pre class="code">'+h(c.solution)+'</pre></div></div>'}
   function scenes(c,kind){const collection=kind==='examples'?c.examples:c.exercises;return '<div class="row g-3">'+collection.map((s,i)=>'<div class="col-md-6"><article class="card scene-card h-100"><div class="card-body"><span class="badge text-bg-light border">'+String(i+1).padStart(2,'0')+'</span><h3 class="h6 mt-2">'+h(T(s.title))+'</h3><pre class="code" style="min-height:90px;max-height:170px;overflow:auto">'+h(s.code)+'</pre><p class="small text-secondary">'+h(T(s.complexity))+'</p><button class="btn btn-sm btn-orange" data-scene="'+kind+':'+i+'">'+U('load')+'</button></div></article></div>').join('')+'</div>'}
   function eventFor(line){if(/\b(if|elif|else)\b/.test(line))return lang==='fr'?'Décision : Python choisit une branche.':'Decision: Python chooses a branch.';if(/\b(for|while)\b/.test(line))return lang==='fr'?'Boucle : un nouveau tour est exécuté.':'Loop: a new turn is executed.';if(/\bdef\b/.test(line))return lang==='fr'?'Fonction : Python mémorise une recette.':'Function: Python stores a recipe.';if(/\breturn\b/.test(line))return lang==='fr'?'Retour : la valeur remonte vers l’appelant.':'Return: a value travels back to the caller.';if(/print/.test(line))return lang==='fr'?'Sortie : Python affiche une valeur.':'Output: Python displays a value.';if(/=/.test(line))return lang==='fr'?'Affectation : une valeur est liée à un nom.':'Assignment: a value is linked to a name.';return lang==='fr'?'Python prépare la prochaine instruction.':'Python prepares the next instruction.'}
-  function valuesFrom(code){const a=code.indexOf('['),b=code.indexOf(']',a+1);if(a<0||b<0)return ['—'];const values=code.slice(a+1,b).split(',').map(v=>v.trim().split('"').join('').split("'").join('')).filter(Boolean);return values.length?values.slice(0,5):['—']}
-  function cells(values,active,withIndex){return values.map((value,i)=>'<div class="cell '+(active===i?'active':'')+'">'+(withIndex?'<small>['+i+']</small>':'')+'<strong>'+h(value)+'</strong></div>').join('')}
-  function treeNames(code){const bits=code.split('"'),names=[];for(let i=1;i<bits.length;i+=2){if(bits[i]!=='valeur'&&bits[i]!=='enfants'&&bits[i]!=='nom')names.push(bits[i])}return names.length?names.slice(0,3):['Projet','Analyse','Dev']}
-  function structure(c,currentCode,line){const values=valuesFrom(currentCode);if(c.id==='vectors'){const index=line.includes('[')&&line.includes(']')?0:null;return '<div class="d-flex align-items-center">'+cells(values,index,true)+'<span class="ms-2 text-secondary small">'+(line.includes('=')?'⇄ '+(lang==='fr'?'écriture / permutation':'write / swap'):(lang==='fr'?'curseur de lecture':'read cursor'))+'</span></div>'}if(c.id==='stacks'){return '<div class="stack">'+cells(values.slice().reverse(),values.length-1,false)+'<small class="text-secondary mt-2">SOMMET ↑ · push / pop</small></div>'}if(c.id==='queues'){return '<div class="queue"><small class="me-2 text-secondary">FRONT</small>'+cells(values,0,false)+'<small class="ms-2 text-secondary">FIN</small></div>'}if(c.id==='trees'){const names=treeNames(currentCode);const root=names[0]||'Projet',left=names[1]||'Analyse',right=names[2]||'Dev',active=line.includes('visiter(')&&!line.includes('visiter('+root+')')?left:root;return '<div class="tree"><svg viewBox="0 0 320 160"><line x1="160" y1="48" x2="70" y2="135" stroke="#58738f" stroke-width="3"/><line x1="160" y1="48" x2="250" y2="135" stroke="#58738f" stroke-width="3"/></svg><div class="node root '+(active===root?'active':'')+'">'+h(root)+'</div><div class="node left '+(active===left?'active':'')+'">'+h(left)+'</div><div class="node right">'+h(right)+'</div></div><div class="call-stack ms-2">&lt;module&gt;<br><strong>visiter('+h(root)+')</strong><br>'+(line.includes('visiter(')?'visiter('+h(active)+')':'—')+'</div>'}return '<div class="text-center"><div class="d-flex gap-2 justify-content-center"><div class="cell active"><small>nom</small><strong>'+h(line.split('=')[0].trim()||'valeur')+'</strong></div><div class="memory-token align-self-center"></div><div class="cell"><small>sortie</small><strong>'+(line.includes('print')?'print':'mémoire')+'</strong></div></div><p class="text-secondary small mt-3 mb-0">'+(lang==='fr'?'Une instruction à la fois : valeur, transformation, résultat.':'One instruction at a time: value, transformation, result.')+'</p></div>'}
-  function lab(c){const current=scene||{title:{fr:'Cas principal',en:'Main case'},code:c.solution};const lines=current.code.split(String.fromCharCode(10)).filter(Boolean);step=Math.min(step,Math.max(0,lines.length-1));const line=lines[step]||'';return '<div class="memory-shell p-3 p-md-4"><div class="d-flex flex-wrap justify-content-between gap-2"><div><p class="eyebrow mb-1">'+U('memory')+'</p><h3 class="h5">'+h(T(current.title))+'</h3></div><span class="badge text-bg-light align-self-start">'+(step+1)+' / '+lines.length+'</span></div><div class="row g-3 mt-1"><div class="col-lg-6"><div>'+lines.map((x,i)=>'<div class="memory-line '+(i===step?'active':'')+'">'+String(i+1).padStart(2,'0')+'  '+h(x)+'</div>').join('')+'</div></div><div class="col-lg-6"><div class="d-flex gap-2 align-items-center"><div class="memory-station active flex-fill">SOURCE<br><small>'+h(line.slice(0,28)||'—')+'</small></div><div class="memory-token"></div><div class="memory-station flex-fill">MÉMOIRE<br><small>'+h(eventFor(line))+'</small></div></div><div class="struct-stage mt-3">'+structure(c,current.code,line)+'</div><div class="alert alert-light mt-3 mb-0"><strong>'+h(eventFor(line))+'</strong><br><span class="small">'+(lang==='fr'?'Le surlignage se déplace avec l’instruction active.':'The highlight moves with the active instruction.')+'</span></div></div></div><div class="btn-group mt-3"><button class="btn btn-outline-light" id="prev">'+U('previous')+'</button><button class="btn btn-orange" id="play">'+U('play')+'</button><button class="btn btn-outline-light" id="next">'+U('next')+'</button><button class="btn btn-outline-light" id="reset">'+U('reset')+'</button></div></div>'}
+  const TRACE_CACHE = {};
+  const RT = (fr, en) => lang === 'fr' ? fr : en;
+
+  function valuesFrom(code) {
+    const first = code.indexOf('[');
+    const last = code.indexOf(']', first + 1);
+    if (first < 0 || last < 0) return ['—'];
+    const values = code.slice(first + 1, last).split(',').map(v => v.trim().replace(/["']/g, '')).filter(Boolean);
+    return values.length ? values.slice(0, 5) : ['—'];
+  }
+
+  function cells(values, active, withIndex) {
+    return values.map((value, index) => '<div class="cell ' + (active === index ? 'active' : '') + '">' + (withIndex ? '<small>[' + index + ']</small>' : '') + '<strong>' + h(value) + '</strong></div>').join('');
+  }
+
+  function treeNames(code) {
+    const parts = code.split('"');
+    const names = [];
+    for (let index = 1; index < parts.length; index += 2) {
+      if (!['valeur', 'enfants', 'nom'].includes(parts[index])) names.push(parts[index]);
+    }
+    return names.length ? names.slice(0, 3) : ['Projet', 'Analyse', 'Dev'];
+  }
+
+  function structure(chapter, code, line) {
+    const values = valuesFrom(code);
+    if (chapter.id === 'vectors') {
+      const active = line.includes('[') && line.includes(']') ? 0 : null;
+      return '<div class="d-flex align-items-center flex-wrap">' + cells(values, active, true) + '<span class="ms-2 text-secondary small">' + (line.includes('=') ? '⇄ ' + RT('écriture / permutation', 'write / swap') : RT('curseur de lecture', 'read cursor')) + '</span></div>';
+    }
+    if (chapter.id === 'stacks') return '<div class="stack">' + cells(values.slice().reverse(), values.length - 1, false) + '<small class="text-secondary mt-2">SOMMET ↑ · push / pop</small></div>';
+    if (chapter.id === 'queues') return '<div class="queue flex-wrap"><small class="me-2 text-secondary">FRONT</small>' + cells(values, 0, false) + '<small class="ms-2 text-secondary">FIN</small></div>';
+    if (chapter.id === 'trees') {
+      const names = treeNames(code);
+      const root = names[0] || 'Projet';
+      const left = names[1] || 'Analyse';
+      const right = names[2] || 'Dev';
+      const active = line.includes('visiter(') && !line.includes('visiter(' + root + ')') ? left : root;
+      return '<div class="tree"><svg viewBox="0 0 320 160"><line x1="160" y1="48" x2="70" y2="135" stroke="#58738f" stroke-width="3"/><line x1="160" y1="48" x2="250" y2="135" stroke="#58738f" stroke-width="3"/></svg><div class="node root ' + (active === root ? 'active' : '') + '">' + h(root) + '</div><div class="node left ' + (active === left ? 'active' : '') + '">' + h(left) + '</div><div class="node right">' + h(right) + '</div></div><div class="call-stack ms-2">&lt;module&gt;<br><strong>visiter(' + h(root) + ')</strong><br>' + (line.includes('visiter(') ? 'visiter(' + h(active) + ')' : '—') + '</div>';
+    }
+    return '<p class="text-secondary small mb-0">' + RT('La mémoire détaillée est affichée juste au-dessus.', 'Detailed memory is displayed just above.') + '</p>';
+  }
+
+  function asNumber(value) {
+    const number = Number(String(value).trim());
+    return Number.isFinite(number) ? number : null;
+  }
+
+  function typeOfValue(value) {
+    if (Array.isArray(value)) return 'list';
+    if (typeof value === 'boolean') return 'bool';
+    if (typeof value === 'number') return Number.isInteger(value) ? 'int' : 'float';
+    return 'str';
+  }
+
+  function packet(value, type) {
+    return { value: value, type: type || typeOfValue(value) };
+  }
+
+  function visibleValue(value) {
+    if (Array.isArray(value)) return '[' + value.map(visibleValue).join(', ') + ']';
+    if (value === undefined || value === null) return '—';
+    return String(value);
+  }
+
+  function memoryCopy(memory) {
+    const copy = {};
+    Object.keys(memory).slice(-12).forEach(name => copy[name] = { value: memory[name].value, type: memory[name].type });
+    return copy;
+  }
+
+  function identifier(text) {
+    const match = String(text || '').trim().match(/[A-Za-z_][A-Za-z0-9_]*/);
+    return match ? match[0] : 'valeur';
+  }
+
+  function sampleInput(name) {
+    const low = String(name).toLowerCase();
+    if (low.includes('age')) return '16';
+    if (low.includes('annee') || low.includes('année') || low.includes('naissance')) return '2008';
+    if (low.includes('note') || low.includes('score')) return '14';
+    if (low.includes('prix') || low.includes('montant')) return '25.5';
+    if (low.includes('nom') || low.includes('prenom') || low.includes('prénom')) return 'Lina';
+    return '3';
+  }
+
+  function evaluate(expression, memory) {
+    let text = String(expression || '').trim();
+    while (text.length > 1 && text[0] === '(' && text[text.length - 1] === ')') text = text.slice(1, -1).trim();
+    if ((text[0] === '"' && text[text.length - 1] === '"') || (text[0] === "'" && text[text.length - 1] === "'")) return packet(text.slice(1, -1), 'str');
+    if (text === 'True' || text === 'False') return packet(text === 'True', 'bool');
+    if (Object.prototype.hasOwnProperty.call(memory, text)) return packet(memory[text].value, memory[text].type);
+    if (text.startsWith('len(') && text.endsWith(')')) {
+      const item = evaluate(text.slice(4, -1), memory).value;
+      return packet((Array.isArray(item) || typeof item === 'string') ? item.length : 0, 'int');
+    }
+    if (text.startsWith('[') && text.endsWith(']')) return packet(text.slice(1, -1).split(',').map(item => evaluate(item, memory).value).filter(value => value !== ''), 'list');
+    const direct = asNumber(text);
+    if (direct !== null) return packet(direct);
+    for (const operator of ['+', '-', '*', '/']) {
+      const position = text.indexOf(operator, 1);
+      if (position > 0) {
+        const left = asNumber(evaluate(text.slice(0, position), memory).value);
+        const right = asNumber(evaluate(text.slice(position + 1), memory).value);
+        if (left !== null && right !== null) {
+          if (operator === '+') return packet(left + right);
+          if (operator === '-') return packet(left - right);
+          if (operator === '*') return packet(left * right);
+          if (operator === '/') return packet(right === 0 ? 0 : left / right);
+        }
+      }
+    }
+    return packet(text, 'expression');
+  }
+
+  function testCondition(condition, memory) {
+    const text = String(condition || '').trim().replace(/:$/, '');
+    for (const operator of ['<=', '>=', '==', '!=', '<', '>']) {
+      const position = text.indexOf(operator);
+      if (position > 0) {
+        const left = evaluate(text.slice(0, position), memory).value;
+        const right = evaluate(text.slice(position + operator.length), memory).value;
+        let result = true;
+        if (operator === '==') result = String(left) === String(right);
+        else if (operator === '!=') result = String(left) !== String(right);
+        else {
+          const a = asNumber(left);
+          const b = asNumber(right);
+          if (a !== null && b !== null) {
+            if (operator === '<') result = a < b;
+            if (operator === '>') result = a > b;
+            if (operator === '<=') result = a <= b;
+            if (operator === '>=') result = a >= b;
+          }
+        }
+        return { label: text + ' → ' + (result ? RT('vrai', 'true') : RT('faux', 'false')), result: result };
+      }
+    }
+    return { label: text + ' → ' + RT('à vérifier', 'to check'), result: true };
+  }
+
+  function traceFor(code) {
+    const key = String(code || '');
+    if (TRACE_CACHE[key]) return TRACE_CACHE[key];
+    const lines = key.split(String.fromCharCode(10)).filter(Boolean);
+    const memory = {};
+    const inputs = [];
+    const outputs = [];
+    const steps = [];
+    const save = (lineIndex, phase, title, detail, change, test, input, screen) => {
+      if (change) memory[change.name] = packet(change.value, change.type);
+      if (input) inputs.push(input);
+      if (screen !== null && screen !== undefined) outputs.push(screen);
+      steps.push({ lineIndex, phase, title, detail, change: change || null, test: test || null, input: input || null, screen: screen || null, memory: memoryCopy(memory), inputs: inputs.slice(), outputs: outputs.slice() });
+    };
+    const writeAssignment = (line, lineIndex, label) => {
+      const match = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*(\+=|-=|\*=|\/=|=)\s*(.*)$/);
+      if (!match) return false;
+      const name = match[1];
+      const operator = match[2];
+      const right = evaluate(match[3], memory);
+      let value = right.value;
+      if (operator !== '=') {
+        const current = asNumber(memory[name] ? memory[name].value : 0) || 0;
+        const delta = asNumber(right.value) || 0;
+        if (operator === '+=') value = current + delta;
+        if (operator === '-=') value = current - delta;
+        if (operator === '*=') value = current * delta;
+        if (operator === '/=') value = delta === 0 ? current : current / delta;
+      }
+      save(lineIndex, 'write', label || RT('Écriture mémoire', 'Memory write'), RT('La variable reçoit sa nouvelle valeur et son type.', 'The variable receives its new value and type.'), { name, value, type: typeOfValue(value) });
+      return true;
+    };
+    const execute = (line, lineIndex, label) => {
+      const clean = String(line || '').trim();
+      if (!clean || clean.startsWith('#')) return;
+      if (clean.startsWith('def ')) {
+        save(lineIndex, 'recipe', RT('Définition mémorisée', 'Definition stored'), RT('Python enregistre la fonction ; elle sera utilisée lors d’un appel.', 'Python stores the function; it will be used on a call.'));
+        return;
+      }
+      if (clean.startsWith('return ')) {
+        const result = evaluate(clean.slice(7), memory);
+        save(lineIndex, 'return', RT('Retour de fonction', 'Function return'), RT('La valeur remonte vers l’appelant.', 'The value travels back to the caller.'), { name: 'retour', value: result.value, type: result.type });
+        return;
+      }
+      if (clean.startsWith('if ') || clean.startsWith('elif ')) {
+        const condition = clean.slice(clean.indexOf(' ') + 1).replace(/:$/, '');
+        save(lineIndex, 'test', RT('Test conditionnel', 'Conditional test'), RT('La condition est évaluée avant de choisir une branche.', 'The condition is evaluated before choosing a branch.'), null, testCondition(condition, memory));
+        return;
+      }
+      if (clean === 'else:') {
+        save(lineIndex, 'test', RT('Branche alternative', 'Alternative branch'), RT('Cette branche est utilisée lorsque les tests précédents sont faux.', 'This branch is used when previous tests are false.'), null, { label: RT('sinon', 'else'), result: true });
+        return;
+      }
+      if (clean.includes('input(')) {
+        const name = identifier(clean.includes('=') ? clean.slice(0, clean.indexOf('=')) : 'reponse');
+        const raw = sampleInput(name);
+        const conversion = clean.includes('int(input') || clean.includes('float(input');
+        save(lineIndex, 'input', RT('Saisie utilisateur', 'User input'), RT('Le clavier transmet d’abord du texte à Python.', 'The keyboard first sends text to Python.'), null, null, { name, value: raw, type: 'str' });
+        if (conversion) {
+          const value = clean.includes('float(') ? Number(raw) : parseInt(raw, 10);
+          save(lineIndex, 'convert', RT('Conversion de type', 'Type conversion'), RT('Le texte reçu est converti avant le calcul.', 'The received text is converted before calculation.'));
+          save(lineIndex, 'write', label || RT('Écriture mémoire', 'Memory write'), RT('La valeur convertie est liée à la variable.', 'The converted value is bound to the variable.'), { name, value, type: clean.includes('float(') ? 'float' : 'int' });
+        } else save(lineIndex, 'write', label || RT('Écriture mémoire', 'Memory write'), RT('Le texte saisi est lié à la variable.', 'The typed text is bound to the variable.'), { name, value: raw, type: 'str' });
+        return;
+      }
+      if (clean.includes('print(')) {
+        const start = clean.indexOf('print(') + 6;
+        const end = clean.lastIndexOf(')');
+        const terms = clean.slice(start, end > start ? end : clean.length).split(',');
+        const screen = terms.map(term => visibleValue(evaluate(term, memory).value)).join(' ');
+        save(lineIndex, 'output', RT('Affichage écran', 'Screen output'), RT('La console reçoit le résultat produit par Python.', 'The console receives the result produced by Python.'), null, null, null, screen);
+        return;
+      }
+      if (writeAssignment(clean, lineIndex, label)) return;
+      save(lineIndex, 'source', RT('Instruction préparée', 'Instruction prepared'), RT('Python prépare l’instruction avant son effet visible.', 'Python prepares the instruction before its visible effect.'));
+    };
+    const indent = line => (line.match(/^\s*/) || [''])[0].length;
+    for (let index = 0; index < lines.length; index += 1) {
+      const raw = lines[index];
+      const clean = raw.trim();
+      if (clean.startsWith('for ') && clean.includes(' in range(')) {
+        const variable = identifier(clean.slice(4, clean.indexOf(' in ')));
+        const argumentsText = clean.slice(clean.indexOf('range(') + 6, clean.lastIndexOf(')'));
+        const items = argumentsText.split(',').map(term => asNumber(evaluate(term, memory).value));
+        const start = items.length > 1 ? (items[0] || 0) : 0;
+        const stop = items.length > 1 ? (items[1] || 3) : (items[0] || 3);
+        const increment = items.length > 2 ? (items[2] || 1) : 1;
+        const body = [];
+        const base = indent(raw);
+        let next = index + 1;
+        while (next < lines.length && indent(lines[next]) > base) { body.push({ line: lines[next], index: next }); next += 1; }
+        const values = [];
+        for (let value = start; increment > 0 ? value < stop : value > stop; value += increment) values.push(value);
+        values.slice(0, 3).forEach((value, turn) => {
+          save(index, 'test', RT('Test de boucle', 'Loop test'), RT('Le test est vérifié avant le tour suivant.', 'The test is checked before the next turn.'), null, { label: variable + ' ' + (increment > 0 ? '<' : '>') + ' ' + stop + ' → ' + RT('vrai', 'true'), result: true, iteration: turn + 1 });
+          save(index, 'iterator', RT('Nouveau tour ' + (turn + 1), 'New turn ' + (turn + 1)), RT('Le compteur reçoit la valeur suivante.', 'The counter receives the next value.'), { name: variable, value, type: 'int' });
+          body.forEach(item => execute(item.line, item.index, RT('Corps de boucle · tour ' + (turn + 1), 'Loop body · turn ' + (turn + 1))));
+        });
+        save(index, 'test', values.length <= 3 ? RT('Test de fin', 'Exit test') : RT('Tours suivants', 'Further turns'), values.length <= 3 ? RT('La condition devient fausse : Python quitte la boucle.', 'The condition becomes false: Python exits the loop.') : RT('Les trois premiers tours sont montrés ; le même mécanisme se répète.', 'The first three turns are shown; the same mechanism repeats.'), null, { label: values.length <= 3 ? variable + ' ' + (increment > 0 ? '<' : '>') + ' ' + stop + ' → ' + RT('faux', 'false') : '… ' + RT('test répété', 'repeated test'), result: values.length > 3 });
+        index = next - 1;
+        continue;
+      }
+      if (clean.startsWith('while ')) {
+        const condition = clean.slice(6).replace(/:$/, '');
+        const body = [];
+        const base = indent(raw);
+        let next = index + 1;
+        while (next < lines.length && indent(lines[next]) > base) { body.push({ line: lines[next], index: next }); next += 1; }
+        for (let turn = 0; turn < 3; turn += 1) {
+          const result = testCondition(condition, memory);
+          save(index, 'test', RT('Test de boucle', 'Loop test'), RT('La condition est évaluée avant le corps de boucle.', 'The condition is evaluated before the loop body.'), null, { label: result.label, result: result.result, iteration: turn + 1 });
+          if (!result.result) break;
+          body.forEach(item => execute(item.line, item.index, RT('Corps de boucle · tour ' + (turn + 1), 'Loop body · turn ' + (turn + 1))));
+          if (turn === 2) save(index, 'test', RT('Tours suivants', 'Further turns'), RT('Les trois premiers tours sont montrés ; observez la même condition à chaque passage.', 'The first three turns are shown; observe the same condition on every pass.'), null, { label: '… ' + RT('test répété', 'repeated test'), result: true });
+        }
+        index = next - 1;
+        continue;
+      }
+      execute(raw, index, '');
+    }
+    if (!steps.length) save(0, 'source', RT('Programme vide', 'Empty program'), RT('Chargez un exemple ou un exercice pour observer son déroulement.', 'Load an example or an exercise to observe its execution.'));
+    TRACE_CACHE[key] = steps;
+    return steps;
+  }
+
+  function phaseName(phase) {
+    const labels = { source: RT('lecture', 'read'), input: RT('entrée', 'input'), convert: RT('conversion', 'conversion'), write: RT('mémoire', 'memory'), test: RT('test', 'test'), iterator: RT('itération', 'iteration'), output: RT('écran', 'screen'), recipe: RT('fonction', 'function'), return: RT('retour', 'return') };
+    return labels[phase] || phase;
+  }
+
+  function memoryView(state) {
+    const names = Object.keys(state.memory || {});
+    if (!names.length) return '<p class="execution-empty">' + RT('Aucune variable n’est encore écrite en mémoire.', 'No variable has been written to memory yet.') + '</p>';
+    return '<div class="memory-grid">' + names.map(name => {
+      const item = state.memory[name];
+      const changed = state.change && state.change.name === name;
+      return '<div class="memory-slot ' + (changed ? 'changed' : '') + '"><span class="memory-name">' + h(name) + '</span><span class="memory-type">' + h(item.type) + '</span><strong>' + h(visibleValue(item.value)) + '</strong></div>';
+    }).join('') + '</div>';
+  }
+
+  function testView(state) {
+    if (!state.test) return '<div class="test-banner neutral">' + RT('Aucun test logique sur cette micro-étape.', 'No logical test on this micro-step.') + '</div>';
+    const color = state.test.result === false ? 'false' : 'true';
+    return '<div class="test-banner ' + color + '"><strong>' + RT('Test', 'Test') + (state.test.iteration ? ' · ' + RT('tour ', 'turn ') + state.test.iteration : '') + '</strong><br>' + h(state.test.label) + '</div>';
+  }
+
+  function ioView(state) {
+    const lastInput = state.inputs && state.inputs.length ? state.inputs[state.inputs.length - 1] : null;
+    const outputs = (state.outputs || []).slice(-3);
+    const inputHtml = lastInput ? '<p class="mb-1"><strong>' + h(lastInput.name) + '</strong> ← “' + h(lastInput.value) + '”</p><small>' + RT('type reçu : ', 'received type: ') + h(lastInput.type) + '</small>' : '<p class="mb-0 text-secondary">' + RT('Aucune saisie à cette étape.', 'No input at this step.') + '</p>';
+    const outputHtml = outputs.length ? outputs.map(value => '<div>&gt;&gt; ' + h(value) + '</div>').join('') : '<p class="mb-0 text-secondary">' + RT('Aucun affichage à cette étape.', 'No output at this step.') + '</p>';
+    return '<div class="row g-2 mt-2"><div class="col-md-6"><div class="io-panel input-panel"><p class="panel-label">⌨ ' + RT('Saisie utilisateur', 'User input') + '</p>' + inputHtml + '</div></div><div class="col-md-6"><div class="io-panel terminal"><p class="panel-label">▣ ' + RT('Écran / console', 'Screen / console') + '</p>' + outputHtml + '</div></div></div>';
+  }
+
+  function lab(chapter) {
+    const current = scene || { title: { fr: 'Cas principal', en: 'Main case' }, code: chapter.solution };
+    const trace = traceFor(current.code);
+    step = Math.min(step, Math.max(0, trace.length - 1));
+    const active = trace[step] || trace[0];
+    const lines = current.code.split(String.fromCharCode(10)).filter(Boolean);
+    const line = lines[active.lineIndex] || '';
+    const source = lines.map((item, index) => '<div class="memory-line ' + (index === active.lineIndex ? 'active' : '') + '">' + String(index + 1).padStart(2, '0') + '  ' + h(item) + '</div>').join('');
+    const rail = '<div class="flow-rail mt-3"><span class="rail-node active">1</span><span>' + RT('lire', 'read') + '</span><span class="rail-arrow">→</span><span class="rail-node ' + (active.phase === 'test' ? 'active' : '') + '">2</span><span>' + RT('tester', 'test') + '</span><span class="rail-arrow">→</span><span class="rail-node ' + (['write', 'iterator'].includes(active.phase) ? 'active' : '') + '">3</span><span>' + RT('mémoriser', 'store') + '</span><span class="rail-arrow">→</span><span class="rail-node ' + (active.phase === 'output' ? 'active' : '') + '">4</span><span>' + RT('afficher', 'display') + '</span></div>';
+    return '<div class="memory-shell p-3 p-md-4"><div class="d-flex flex-wrap justify-content-between gap-2"><div><p class="eyebrow mb-1">' + U('memory') + '</p><h3 class="h5 mb-1">' + h(T(current.title)) + '</h3><p class="mb-0 text-white-50 small">' + RT('Micro-étape ', 'Micro-step ') + (step + 1) + ' / ' + trace.length + ' · ' + h(phaseName(active.phase)) + '</p></div><span class="phase-chip">' + h(phaseName(active.phase)) + '</span></div><div class="row g-3 mt-1"><div class="col-lg-5"><p class="eyebrow text-white-50 mb-2">' + RT('Code source', 'Source code') + '</p><div class="source-list">' + source + '</div>' + rail + '</div><div class="col-lg-7"><div class="execution-card"><p class="eyebrow mb-1">' + RT('Ce que Python fait maintenant', 'What Python does now') + '</p><h4 class="h6">' + h(active.title) + '</h4><p class="mb-0">' + h(active.detail) + '</p>' + testView(active) + '</div><div class="execution-card mt-2"><p class="eyebrow mb-2">' + RT('Mémoire centrale', 'Central memory') + '</p>' + memoryView(active) + '</div>' + ioView(active) + '<div class="struct-stage mt-2">' + structure(chapter, current.code, line) + '</div></div></div><div class="d-flex flex-wrap gap-2 mt-3"><button class="btn btn-outline-light" id="prev">' + U('previous') + '</button><button class="btn btn-orange" id="play">' + U('play') + '</button><button class="btn btn-outline-light" id="next">' + U('next') + '</button><button class="btn btn-outline-light" id="reset">' + U('reset') + '</button></div></div>';
+  }
+
   function quiz(c){return '<div class="card"><div class="card-body"><p class="eyebrow">QUIZ</p>'+c.questions.map((q,i)=>'<fieldset class="mb-4"><legend class="h6">'+(i+1)+'. '+h(T(q.prompt))+'</legend>'+q.choices.map((choice,j)=>'<label class="form-check mb-1"><input class="form-check-input" type="radio" name="q'+i+'" value="'+j+'"> <span class="form-check-label">'+h(T(choice))+'</span></label>').join('')+'</fieldset>').join('')+'<button id="grade" class="btn btn-orange">'+U('correct')+'</button><p id="score" class="mt-3 mb-0 fw-bold"></p></div></div>'}
-  function profile(){const fr=lang==='fr';const role=fr?'Enseignant SNT · Informatique · Algorithmique · Ingénierie pédagogique · Web & IA.':'SNT teacher · Computer science · Algorithms · Learning design · Web & AI.';const bio=fr?'Conception de parcours de remédiation, de supports bilingues et d’expériences numériques pour débutants.':'Design of remedial pathways, bilingual resources and digital experiences for beginners.';const portfolio=fr?'PORTFOLIO PÉDAGOGIQUE':'EDUCATIONAL PORTFOLIO';const projects=fr?[['Python','Parcours de remise à niveau et mémoire d’exécution.'],['APC · Bloom','Situations, compétences et progressions guidées.'],['Web éducatif','Interfaces simples, bilingues et accessibles.']]:[['Python','Remedial pathway and execution memory.'],['APC · Bloom','Situations, competencies and guided progression.'],['Educational web','Simple, bilingual and accessible interfaces.']];return '<section id="profile" class="profile p-4 mt-4"><div class="row g-4"><div class="col-md-5"><p class="eyebrow">'+U('profile')+'</p><h2 class="h3">M. Haithem BERKANE</h2><p>'+role+'</p><p class="mb-0 text-white-50">'+bio+'</p></div><div class="col-md-7"><p class="eyebrow">'+portfolio+'</p><div class="row g-2">'+projects.map(x=>'<div class="col-sm-4"><div class="portfolio-item p-3 bg-white text-dark rounded h-100"><strong>'+x[0]+'</strong><br><small>'+x[1]+'</small></div></div>').join('')+'</div></div></div></section>'}
-  function bind(c){document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{stop();tab=b.dataset.tab;render()});document.querySelectorAll('[data-scene]').forEach(b=>b.onclick=()=>{const[k,i]=b.dataset.scene.split(':');scene=(k==='examples'?c.examples:c.exercises)[+i];step=0;tab='lab';render();document.querySelector('.memory-shell')?.scrollIntoView({behavior:'smooth',block:'start'})});if(tab==='lab'){ $('prev').onclick=()=>{stop();step=Math.max(0,step-1);render()};$('next').onclick=()=>{stop();step=Math.min((scene||{code:c.solution}).code.split('\n').filter(Boolean).length-1,step+1);render()};$('reset').onclick=()=>{stop();step=0;render()};$('play').onclick=()=>{if(timer){stop();return}timer=setInterval(()=>{const n=(scene||{code:c.solution}).code.split('\n').filter(Boolean).length-1;if(step>=n){stop()}else{step++;render()}},1100);$('play').textContent='Pause'}}if(tab==='quiz')$('grade').onclick=()=>{let ok=0;c.questions.forEach((q,i)=>{if(document.querySelector('input[name="q'+i+'"]:checked')?.value==q.answer)ok++});$('score').textContent=U('score')+' : '+ok+' / '+c.questions.length}}
+  function profile() {
+    const fr = lang === 'fr';
+    const intro = fr
+      ? 'Enseignant de SNT, informatique et algorithmique, spécialisé dans la remédiation pédagogique et la conception de parcours accessibles aux débutants.'
+      : 'SNT, computer science and algorithms teacher, specialised in educational remediation and the design of accessible pathways for beginners.';
+    const approach = fr
+      ? 'Une pédagogie explicite : diagnostiquer les lacunes, verbaliser le raisonnement, faire manipuler les variables puis consolider par la pratique guidée.'
+      : 'An explicit pedagogy: diagnose gaps, verbalise reasoning, make variables tangible, then consolidate through guided practice.';
+    const skills = fr
+      ? [
+          ['Domaines d’intervention', 'Python débutant · algorithmique · SNT · structures de données · statistiques introductives'],
+          ['Ingénierie pédagogique', 'Approche Par Compétences (APC) · taxonomie de Bloom · différenciation · remédiation'],
+          ['Conception numérique', 'Tutoriels bilingues · déroulés d’exécution · interfaces web pédagogiques · IA éducative'],
+        ]
+      : [
+          ['Teaching domains', 'Beginner Python · algorithms · SNT · data structures · introductory statistics'],
+          ['Learning design', 'Competency-based approach · Bloom taxonomy · differentiation · remediation'],
+          ['Digital design', 'Bilingual tutorials · execution walkthroughs · educational web interfaces · educational AI'],
+        ];
+    const projects = fr
+      ? [
+          ['Tutoriel Python complet', '14 parcours, 140 exemples, 210 exercices corrigés et laboratoire de mémoire visuelle.'],
+          ['Remédiation SNT', 'Séquences graduées du diagnostic à l’autonomie, pensées pour les élèves avec lacunes.'],
+          ['APC & Bloom', 'Situations progressives pour comprendre, appliquer, analyser, évaluer puis créer.'],
+          ['Web éducatif bilingue', 'Ressources FR/EN simples, responsives et exploitables sans compte.'],
+        ]
+      : [
+          ['Complete Python tutorial', '14 paths, 140 examples, 210 corrected exercises and a visual memory lab.'],
+          ['SNT remediation', 'Graduated sequences from diagnosis to autonomy for learners with gaps.'],
+          ['APC & Bloom', 'Progressive situations to understand, apply, analyse, evaluate and create.'],
+          ['Bilingual educational web', 'Simple, responsive FR/EN resources usable without an account.'],
+        ];
+    return '<section id="profile" class="profile p-4 p-lg-5 mt-4"><div class="row g-4"><div class="col-lg-4"><p class="eyebrow">' + U('profile') + '</p><h2 class="h2">M. Haithem BERKANE</h2><p class="lead small">' + (fr ? 'Enseignant SNT · Informatique · Algorithmique · Ingénierie pédagogique · Web & IA.' : 'SNT teacher · Computer science · Algorithms · Learning design · Web & AI.') + '</p><p class="text-white-50">' + intro + '</p><div class="cv-callout"><strong>' + (fr ? 'Démarche pédagogique' : 'Teaching approach') + '</strong><br><span>' + approach + '</span></div></div><div class="col-lg-8"><p class="eyebrow">' + (fr ? 'PROFIL PROFESSIONNEL' : 'PROFESSIONAL PROFILE') + '</p><div class="row g-2">' + skills.map(item => '<div class="col-md-4"><article class="cv-block h-100"><h3 class="h6">' + item[0] + '</h3><p class="small mb-0">' + item[1] + '</p></article></div>').join('') + '</div><p class="eyebrow mt-4">' + (fr ? 'PORTFOLIO PÉDAGOGIQUE' : 'EDUCATIONAL PORTFOLIO') + '</p><div class="row g-2">' + projects.map(item => '<div class="col-md-6"><article class="portfolio-item cv-block h-100"><h3 class="h6">' + item[0] + '</h3><p class="small mb-0">' + item[1] + '</p></article></div>').join('') + '</div></div></div></section>';
+  }
+
+  function bind(c) {
+    document.querySelectorAll('[data-tab]').forEach(button => button.onclick = () => {
+      stop();
+      tab = button.dataset.tab;
+      render();
+    });
+    document.querySelectorAll('[data-scene]').forEach(button => button.onclick = () => {
+      const parts = button.dataset.scene.split(':');
+      scene = (parts[0] === 'examples' ? c.examples : c.exercises)[+parts[1]];
+      step = 0;
+      tab = 'lab';
+      render();
+      document.querySelector('.memory-shell')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    if (tab === 'lab') {
+      const current = () => scene || { title: { fr: 'Cas principal', en: 'Main case' }, code: c.solution };
+      const last = () => Math.max(0, traceFor(current().code).length - 1);
+      $('prev').onclick = () => { stop(); step = Math.max(0, step - 1); render(); };
+      $('next').onclick = () => { stop(); step = Math.min(last(), step + 1); render(); };
+      $('reset').onclick = () => { stop(); step = 0; render(); };
+      $('play').onclick = () => {
+        if (timer) { stop(); render(); return; }
+        timer = setInterval(() => {
+          if (step >= last()) { stop(); render(); }
+          else { step += 1; render(); }
+        }, 1650);
+        $('play').textContent = 'Pause';
+      };
+    }
+    if (tab === 'quiz') $('grade').onclick = () => {
+      let ok = 0;
+      c.questions.forEach((question, index) => {
+        if (document.querySelector('input[name="q' + index + '"]:checked')?.value == question.answer) ok += 1;
+      });
+      $('score').textContent = U('score') + ' : ' + ok + ' / ' + c.questions.length;
+    };
+  }
+
   function stop(){if(timer){clearInterval(timer);timer=null}}function render(){const c=DATA[chapterIndex];nav();let body=sectionHeader(c);if(tab==='course')body+=course(c);if(tab==='examples')body+=scenes(c,'examples');if(tab==='exercises')body+=scenes(c,'exercises');if(tab==='lab')body+=lab(c);if(tab==='quiz')body+=quiz(c);body+=profile();$('content').innerHTML=body;bind(c);$('language').textContent=U('language');$('heroKicker').textContent=lang==='fr'?'14 PARCOURS · 140 EXEMPLES · 210 EXERCICES':'14 PATHS · 140 EXAMPLES · 210 EXERCISES';$('heroTitle').textContent=lang==='fr'?'Python : comprendre, modéliser, pratiquer.':'Python: understand, model, practise.';$('heroText').textContent=lang==='fr'?'Cours, exemples, exercices corrigés et mémoire visuelle dans un seul fichier HTML Bootstrap.':'Courses, examples, corrected exercises and visual memory in one Bootstrap HTML file.'} $('language').onclick=()=>{stop();lang=lang==='fr'?'en':'fr';render()};render();
   </script>
 </body>
