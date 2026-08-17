@@ -11,6 +11,7 @@
   </style>
 <style id="execution-visual-style">
 .source-list{max-height:420px;overflow:auto;padding-right:.2rem}.phase-chip{display:inline-block;padding:.35rem .65rem;border:1px solid #ffb985;border-radius:999px;color:#ffcfac;background:rgba(198,93,33,.24);font-size:.78rem;font-weight:800;text-transform:uppercase}.execution-card{background:#fff;color:#0b1f3a;border-radius:.8rem;padding:.8rem;border-left:4px solid #c65d21}.execution-empty{margin:0;color:#62748a;font-size:.9rem}.memory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:.5rem}.memory-slot{position:relative;border:1px solid #cbd7e5;border-radius:.6rem;background:#f8fbff;padding:.55rem;display:flex;flex-direction:column;min-height:82px;transition:transform .2s cubic-bezier(.23,1,.32,1),box-shadow .2s}.memory-slot.changed{border-color:#c65d21;background:#fff0e8;box-shadow:0 0 0 .2rem rgba(198,93,33,.16);transform:translateY(-3px)}.memory-name{font-family:ui-monospace,monospace;font-size:.78rem;color:#0b1f3a;font-weight:800}.memory-type{align-self:flex-start;margin:.18rem 0;padding:.05rem .32rem;border-radius:999px;background:#e9f1f8;color:#49667f;font-size:.68rem}.memory-slot strong{font-size:.88rem;overflow-wrap:anywhere}.io-panel{height:100%;border-radius:.75rem;padding:.7rem;background:#fff;color:#0b1f3a;border:1px solid #cbd7e5}.input-panel{border-left:4px solid #ffb985}.terminal{background:#071525;color:#dff5e5;border-color:#31546e;font-family:ui-monospace,monospace}.terminal .panel-label{color:#9dd1ab}.panel-label{font-weight:800;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.35rem}.test-banner{margin-top:.65rem;padding:.55rem .65rem;border-radius:.55rem;font-size:.88rem}.test-banner.true{background:#e9f8ef;border-left:4px solid #1f8a55;color:#155d39}.test-banner.false{background:#fff0ed;border-left:4px solid #c65d21;color:#843614}.test-banner.neutral{background:#f2f7fc;border-left:4px solid #9eb5cd;color:#526d87}.flow-rail{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;font-size:.72rem;color:#dbe9f5}.rail-node{display:grid;place-items:center;width:22px;height:22px;border:1px solid rgba(255,255,255,.35);border-radius:50%;font-weight:800}.rail-node.active{background:#c65d21;border-color:#ffb985}.rail-arrow{color:#ffb985}.cv-block{background:rgba(255,255,255,.96);color:#0b1f3a;border-radius:.75rem;padding:1rem}.cv-block h3{color:#0b1f3a}.cv-callout{padding:.85rem;border-left:4px solid #ffb985;background:rgba(255,255,255,.1);border-radius:.5rem;font-size:.88rem}.profile .portfolio-item{border-left:4px solid #c65d21}@media(prefers-reduced-motion:no-preference){.memory-slot.changed{animation:memoryPulse .7s cubic-bezier(.23,1,.32,1) 1}.input-panel{animation:entryGlow .65s ease-out 1}.terminal{animation:entryGlow .65s ease-out 1}@keyframes memoryPulse{0%{opacity:.55;transform:translateY(7px)}100%{opacity:1;transform:translateY(-3px)}}@keyframes entryGlow{0%{opacity:.45;transform:translateY(5px)}100%{opacity:1;transform:translateY(0)}}}@media(max-width:575px){.flow-rail{font-size:.66rem}.memory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.source-list{max-height:280px}}
+.profile-document{background:linear-gradient(155deg,#0b1f3a 0%,#123961 60%,#0b1f3a 100%);overflow:hidden}.profile-document-head{max-width:820px}.profile-document h2{font-size:clamp(2rem,5vw,3.2rem);margin:.15rem 0 .3rem}.profile-role{color:#ffcfac;font-weight:700;margin:0}.profile-subtitle{color:#dbe9f5;margin:.55rem 0 0}.profile-intro{font-size:1.05rem;line-height:1.75;color:#f1f7fc}.profile-evidence{height:100%;padding:1rem;border:1px solid rgba(255,185,133,.45);border-radius:.8rem;background:rgba(255,255,255,.08);color:#f1f7fc}.profile-evidence p{margin:.35rem 0 0;font-size:.9rem;color:#dbe9f5}.profile-metrics>div>div{height:100%;padding:.85rem;border-radius:.7rem;background:rgba(255,255,255,.1);border-top:2px solid #ffb985}.profile-metrics strong{display:block;font-size:1.35rem;color:#fff}.profile-metrics span{display:block;color:#dbe9f5;font-size:.75rem;line-height:1.25}.profile-section-title{display:flex;gap:.65rem;align-items:center;margin:2.3rem 0 1rem}.profile-section-title span{width:28px;height:3px;background:#ffb985}.profile-section-title h3{margin:0;color:#ffcfac;font-size:.83rem;letter-spacing:.11em;text-transform:uppercase}.cv-timeline{display:grid;gap:.75rem}.cv-timeline-item{display:grid;grid-template-columns:145px 1fr;gap:1rem;padding:1rem;border-radius:.75rem;background:rgba(255,255,255,.96);color:#0b1f3a;border-left:4px solid #c65d21}.cv-year{font-weight:800;color:#a94d1b;font-size:.84rem}.cv-timeline-item h4,.cv-detail-card h4,.cv-qualification h4,.cv-engagement h4{font-size:1rem;margin:0 0 .35rem;color:#0b1f3a}.cv-timeline-item p,.cv-detail-card p,.cv-qualification p,.cv-engagement p{margin:0;color:#43586f;font-size:.87rem;line-height:1.55}.cv-detail-card,.cv-qualification{height:100%;padding:1rem;border-radius:.75rem;background:#fff;color:#0b1f3a;border:1px solid rgba(255,255,255,.3)}.cv-detail-card{border-top:3px solid #ffb985}.cv-qualification{position:relative;padding-top:2.8rem}.cv-qualification>span{position:absolute;top:.75rem;left:.85rem;color:#a94d1b;font-weight:800;font-size:.78rem;letter-spacing:.08em}.cv-engagements{display:grid;gap:.65rem}.cv-engagement{display:grid;grid-template-columns:125px 1fr;gap:.8rem;padding:.85rem 1rem;border-radius:.7rem;background:rgba(255,255,255,.94);color:#0b1f3a}.cv-engagement>span{font-weight:800;font-size:.76rem;color:#a94d1b}.profile-sources{padding:1rem;border-radius:.75rem;border:1px dashed rgba(255,185,133,.75);background:rgba(255,255,255,.08);color:#eef6ff}.profile-sources p{margin:0 0 .7rem}.profile-sources div{display:flex;gap:.4rem;flex-wrap:wrap}.profile-sources span{padding:.25rem .5rem;border-radius:999px;background:rgba(255,255,255,.13);font-family:ui-monospace,monospace;font-size:.72rem}.profile-sources small{display:block;margin-top:.85rem;color:#dbe9f5;line-height:1.5}@media(max-width:767px){.cv-timeline-item,.cv-engagement{grid-template-columns:1fr}.cv-year{padding-bottom:.25rem;border-bottom:1px solid #e4edf5}.cv-engagement>span{padding-bottom:.2rem}.profile-document{padding:1.35rem!important}}
 </style>
 
 </head>
@@ -340,37 +341,127 @@
   function quiz(c){return '<div class="card"><div class="card-body"><p class="eyebrow">QUIZ</p>'+c.questions.map((q,i)=>'<fieldset class="mb-4"><legend class="h6">'+(i+1)+'. '+h(T(q.prompt))+'</legend>'+q.choices.map((choice,j)=>'<label class="form-check mb-1"><input class="form-check-input" type="radio" name="q'+i+'" value="'+j+'"> <span class="form-check-label">'+h(T(choice))+'</span></label>').join('')+'</fieldset>').join('')+'<button id="grade" class="btn btn-orange">'+U('correct')+'</button><p id="score" class="mt-3 mb-0 fw-bold"></p></div></div>'}
   function profile() {
     const fr = lang === 'fr';
-    const intro = fr
-      ? 'Enseignant de SNT, informatique et algorithmique, spécialisé dans la remédiation pédagogique et la conception de parcours accessibles aux débutants.'
-      : 'SNT, computer science and algorithms teacher, specialised in educational remediation and the design of accessible pathways for beginners.';
-    const approach = fr
-      ? 'Une pédagogie explicite : diagnostiquer les lacunes, verbaliser le raisonnement, faire manipuler les variables puis consolider par la pratique guidée.'
-      : 'An explicit pedagogy: diagnose gaps, verbalise reasoning, make variables tangible, then consolidate through guided practice.';
-    const skills = fr
-      ? [
-          ['Domaines d’intervention', 'Python débutant · algorithmique · SNT · structures de données · statistiques introductives'],
-          ['Ingénierie pédagogique', 'Approche Par Compétences (APC) · taxonomie de Bloom · différenciation · remédiation'],
-          ['Conception numérique', 'Tutoriels bilingues · déroulés d’exécution · interfaces web pédagogiques · IA éducative'],
-        ]
-      : [
-          ['Teaching domains', 'Beginner Python · algorithms · SNT · data structures · introductory statistics'],
-          ['Learning design', 'Competency-based approach · Bloom taxonomy · differentiation · remediation'],
-          ['Digital design', 'Bilingual tutorials · execution walkthroughs · educational web interfaces · educational AI'],
-        ];
-    const projects = fr
-      ? [
-          ['Tutoriel Python complet', '14 parcours, 140 exemples, 210 exercices corrigés et laboratoire de mémoire visuelle.'],
-          ['Remédiation SNT', 'Séquences graduées du diagnostic à l’autonomie, pensées pour les élèves avec lacunes.'],
-          ['APC & Bloom', 'Situations progressives pour comprendre, appliquer, analyser, évaluer puis créer.'],
-          ['Web éducatif bilingue', 'Ressources FR/EN simples, responsives et exploitables sans compte.'],
-        ]
-      : [
-          ['Complete Python tutorial', '14 paths, 140 examples, 210 corrected exercises and a visual memory lab.'],
-          ['SNT remediation', 'Graduated sequences from diagnosis to autonomy for learners with gaps.'],
-          ['APC & Bloom', 'Progressive situations to understand, apply, analyse, evaluate and create.'],
-          ['Bilingual educational web', 'Simple, responsive FR/EN resources usable without an account.'],
-        ];
-    return '<section id="profile" class="profile p-4 p-lg-5 mt-4"><div class="row g-4"><div class="col-lg-4"><p class="eyebrow">' + U('profile') + '</p><h2 class="h2">M. Haithem BERKANE</h2><p class="lead small">' + (fr ? 'Enseignant SNT · Informatique · Algorithmique · Ingénierie pédagogique · Web & IA.' : 'SNT teacher · Computer science · Algorithms · Learning design · Web & AI.') + '</p><p class="text-white-50">' + intro + '</p><div class="cv-callout"><strong>' + (fr ? 'Démarche pédagogique' : 'Teaching approach') + '</strong><br><span>' + approach + '</span></div></div><div class="col-lg-8"><p class="eyebrow">' + (fr ? 'PROFIL PROFESSIONNEL' : 'PROFESSIONAL PROFILE') + '</p><div class="row g-2">' + skills.map(item => '<div class="col-md-4"><article class="cv-block h-100"><h3 class="h6">' + item[0] + '</h3><p class="small mb-0">' + item[1] + '</p></article></div>').join('') + '</div><p class="eyebrow mt-4">' + (fr ? 'PORTFOLIO PÉDAGOGIQUE' : 'EDUCATIONAL PORTFOLIO') + '</p><div class="row g-2">' + projects.map(item => '<div class="col-md-6"><article class="portfolio-item cv-block h-100"><h3 class="h6">' + item[0] + '</h3><p class="small mb-0">' + item[1] + '</p></article></div>').join('') + '</div></div></div></section>';
+    const copy = fr ? {
+      section: 'CV & PORTFOLIO DOCUMENTÉ',
+      subtitle: 'Synthèse professionnelle fondée exclusivement sur les six documents PDF communiqués.',
+      role: 'Architecte logiciel & IA · Consultant senior IT · Expert en ingénierie pédagogique (CIP)',
+      intro: 'Consultant, développeur Web & IA, formateur et ingénieur pédagogique. Son parcours réunit l’architecture de solutions, la transformation numérique, la transmission de compétences et l’accompagnement de projets académiques, entrepreneuriaux et institutionnels.',
+      evidence: 'Les informations ci-dessous sont une synthèse des documents transmis. Les coordonnées et données personnelles ne sont pas publiées.',
+      metricsTitle: 'Repères documentés',
+      experience: 'Parcours professionnel',
+      education: 'Formation & qualifications',
+      expertise: 'Domaines d’expertise',
+      projects: 'Réalisations logicielles & solutions',
+      learning: 'Mentorat, e-learning & transmission',
+      engagements: 'Engagements, conférences & attestations',
+      sources: 'Sources documentaires utilisées',
+      sourcesText: 'Cette section s’appuie uniquement sur les six PDF transmis : CV anglais, portfolio professionnel, certificats de formation IA/BMC, certificat GEW et dossier de diplômes et attestations.',
+      note: 'Les formulations sont volontairement descriptives : elles présentent les fonctions, projets et attestations cités dans les documents sans ajouter de faits externes.',
+      experienceData: [
+        ['2021 – présent', 'Consultant indépendant & expert IA / Développeur Web & IA', 'Conception de solutions prédictives et d’aide à la décision ; architectures RAG et modèles de langage privés ; développement de solutions Web & IA ; accompagnement de projets numériques.'],
+        ['2019 – présent', 'Formateur & consultant indépendant', 'Conception de programmes de formation, mentorat de startups et de projets étudiants, animation de sessions en ligne en IA, data, programmation, développement Web et prise de parole.'],
+        ['Avril 2021 – présent', 'Instructeur professionnel · CFPA BBA 04', 'Enseignement de modules techniques, production de contenus pédagogiques et contribution à la conception de programmes.'],
+        ['2019 – 2020', 'Directeur de projet métier · Condor Academy', 'Pilotage d’activités de formation ; contribution aux projets ERP SAP FICO, LMS Condor Success Factors, site officiel et plateforme Microsoft Academy.'],
+        ['2020 – 2021', 'Responsabilités de formation · CFPA BBA 04 / INSFP BBA 01', 'Mise en place d’une plateforme e-learning et d’une chaîne YouTube ; coordination pédagogique, administrative et d’examens.'],
+        ['2014 – 2020', 'Chargé de TP universitaire & formateur professionnel', 'Interventions en génie logiciel, Delphi, algorithmique et systèmes d’information ; développement de programmes de formation et ingénierie pédagogique.'],
+      ],
+      educationData: [
+        ['2013', 'Master en informatique · Réseaux et multimédia', 'Université de Bordj Bou Arréridj, Faculté des mathématiques et de l’informatique.'],
+        ['2011', 'Licence en informatique d’aide à la décision', 'Université El Bachir Ibrahimi, Bordj Bou Arréridj. Le CV fourni mentionne une première place de promotion et un projet national sur la classification de patients par apprentissage automatique.'],
+        ['2006 – 2008', 'Cycle préparatoire d’ingénieur', 'ENPEI Rouiba, Alger.'],
+        ['2015', 'Certificat de formation pédagogique', 'IFPG Guenbour, Sétif, mentionné dans le CV fourni.'],
+      ],
+      expertiseData: [
+        ['IA, data & gouvernance', 'Prompt engineering, IA générative, LLM, architectures RAG, machine learning, modélisation prédictive, analyse de données, business intelligence, éthique et souveraineté numérique.'],
+        ['Architecture & développement', 'Architecture full-stack, PHP, Laravel, MySQL, Bootstrap, HTML/CSS, JavaScript, Python, Delphi, Java, C#, SQL Server, Oracle et Access.'],
+        ['Transformation & sécurité', 'Déploiement ERP SAP FICO, LMS, audit de sécurité, gouvernance des données, systèmes d’aide à la décision et solutions institutionnelles.'],
+        ['Ingénierie pédagogique', 'Certification CIP, conception de contenus et programmes, formation hybride et en ligne, Google Meet, Zoom, mentorat et différenciation pédagogique.'],
+      ],
+      projectsData: [
+        ['Simulateur Python et C', 'Environnement de simulation interactif conçu pour l’apprentissage de la programmation auprès d’étudiants et de stagiaires.'],
+        ['ASR PRO · Numérisation des examens', 'Système de gestion et d’évaluation sécurisée de concours en ligne, présenté comme un modèle de transformation numérique pour les instituts de formation.'],
+        ['Moufid BI · Intelligence financière', 'Plateforme de diagnostic financier pour groupes industriels, consacrée à l’analyse automatisée de performance et au contrôle de gestion prédictif.'],
+        ['Plateforme Zakat Fitr', 'Plateforme numérique citoyenne conçue pour la gestion de la Zakat.'],
+      ],
+      learningData: [
+        ['Formation & diffusion numérique', 'Le portfolio mentionne une communauté éducative de plus de 56 000 abonnés sur Instagram et de 12 000 sur Facebook, ainsi que des cours interactifs en Darija créés en 2026.'],
+        ['Préparation doctorat', '25 sessions en ligne depuis 2021 dédiées à la préparation de l’examen de doctorat en intelligence artificielle.'],
+        ['Data, programmation & Web', 'Cinq sessions Python, analyse de données et IA ; deux sessions intensives de développement Web ; encadrement déclaré de 15 étudiants étrangers dans les programmes data et programmation.'],
+        ['PFE, diaspora & soft skills', 'Formation IA et présentations de PFE, accompagnement d’étudiants de la diaspora algérienne et cinq sessions gratuites de prise de parole en public.'],
+      ],
+      engagementsData: [
+        ['30 avril 2026', 'Université Ferhat Abbas Sétif 1', 'Formation en ligne « Économie et données : accélérez votre recherche avec Python », destinée aux enseignants et doctorants.'],
+        ['21–22 avril 2026', 'Incubateur UFAS Sétif 1', 'Formation « Le BMC sous Stéroïdes », consacrée à l’usage de l’IA comme mentor et investisseur virtuel pour les porteurs de projets.'],
+        ['28–30 mars 2026', 'Global Africa Tech', 'Participation au sommet dédié à la technologie et à l’innovation en Afrique, avec un focus sur la souveraineté numérique.'],
+        ['2025', 'Semaine mondiale de l’entrepreneuriat / GEN Algeria', 'Conférence sur l’intégration de l’IA dans les startups et certificat de reconnaissance pour la contribution aux activités GEW 2025.'],
+        ['2025', 'Salon du Métier & Olympiades des Métiers', 'Présentation d’ASR PRO, accompagnement de stagiaires sur l’intégration de l’IA et contribution documentée comme membre du jury de la spécialité informatique.'],
+        ['2024 & 2020', 'Innovation, prise de parole & jeunesse', 'Certificat lié au salon national du Bricolage et de l’Innovation (juillet 2024), intervention IWD’20 avec WTM BBA / GDG BBA et reconnaissance pour une contribution au développement de la jeunesse (mars 2020).'],
+      ],
+      documents: ['IAéconomie.pdf', 'BMCAIUFAS.pdf', 'GEWDFPBBA.pdf', 'diplômeetattestations(1).pdf', 'AHMEDHAITHEMBERKANE.eng(1).pdf', 'PortfolioProfessionnel(1)-Copie.pdf'],
+    } : {
+      section: 'DOCUMENTED CV & PORTFOLIO',
+      subtitle: 'Professional summary based exclusively on the six PDF documents supplied.',
+      role: 'Software & AI architect · Senior IT consultant · Learning-engineering expert (CIP)',
+      intro: 'Consultant, Web & AI developer, trainer and learning engineer. His path brings together solution architecture, digital transformation, skills transfer and the support of academic, entrepreneurial and institutional projects.',
+      evidence: 'The information below is a synthesis of the supplied documents. Contact and personal data are not published.',
+      metricsTitle: 'Documented highlights',
+      experience: 'Professional experience',
+      education: 'Education & qualifications',
+      expertise: 'Fields of expertise',
+      projects: 'Software achievements & solutions',
+      learning: 'Mentoring, e-learning & knowledge transfer',
+      engagements: 'Engagements, speaking & certificates',
+      sources: 'Documentary sources used',
+      sourcesText: 'This section relies solely on the six supplied PDFs: English CV, professional portfolio, AI/BMC training certificates, GEW certificate, and diplomas and certificates dossier.',
+      note: 'The wording is deliberately descriptive: it presents the roles, projects and credentials referenced by the documents without adding external facts.',
+      experienceData: [
+        ['2021 – present', 'Independent consultant & AI expert / Web & AI developer', 'Predictive and decision-support solutions; RAG architectures and private language models; Web & AI solutions; support for digital projects.'],
+        ['2019 – present', 'Independent trainer & consultant', 'Training-programme design, startup and student-project mentoring, and online sessions in AI, data, programming, Web development and public speaking.'],
+        ['April 2021 – present', 'Vocational instructor · CFPA BBA 04', 'Technical-module teaching, production of educational materials and contribution to programme design.'],
+        ['2019 – 2020', 'Business project director · Condor Academy', 'Training-activity management; contribution to SAP FICO ERP, Condor Success Factors LMS, official website and Microsoft Academy platform projects.'],
+        ['2020 – 2021', 'Training leadership roles · CFPA BBA 04 / INSFP BBA 01', 'Implementation of an e-learning platform and a YouTube channel; academic, administrative and examination coordination.'],
+        ['2014 – 2020', 'University lab instructor & vocational trainer', 'Teaching in software engineering, Delphi, algorithms and information systems; training-programme development and educational engineering.'],
+      ],
+      educationData: [
+        ['2013', 'Master’s degree in Computer Science · Networks & Multimedia', 'University of Bordj Bou Arréridj, Faculty of Mathematics and Computer Science.'],
+        ['2011', 'Bachelor’s degree in Decision Support Computer Science', 'University El Bachir Ibrahimi, Bordj Bou Arréridj. The supplied CV notes top-of-class standing and a national project on patient classification using machine learning.'],
+        ['2006 – 2008', 'Engineering preparatory programme', 'ENPEI Rouiba, Algiers.'],
+        ['2015', 'Pedagogical training certificate', 'IFPG Guenbour, Sétif, as listed in the supplied CV.'],
+      ],
+      expertiseData: [
+        ['AI, data & governance', 'Prompt engineering, generative AI, LLMs, RAG architectures, machine learning, predictive modelling, data analysis, business intelligence, ethics and digital sovereignty.'],
+        ['Architecture & development', 'Full-stack architecture, PHP, Laravel, MySQL, Bootstrap, HTML/CSS, JavaScript, Python, Delphi, Java, C#, SQL Server, Oracle and Access.'],
+        ['Transformation & security', 'SAP FICO ERP, LMS deployment, security audit, data governance, decision-support systems and institutional solutions.'],
+        ['Learning engineering', 'CIP certification, content and programme design, hybrid and online learning, Google Meet, Zoom, mentoring and differentiated teaching.'],
+      ],
+      projectsData: [
+        ['Python & C simulator', 'Interactive simulation environment designed to teach programming to students and trainees.'],
+        ['ASR PRO · Exam digitisation', 'Online examination-management and secure-assessment system, presented as a digital-transformation model for training institutes.'],
+        ['Moufid BI · Financial intelligence', 'Financial-diagnostic platform for industrial groups, focused on automated performance analysis and predictive management control.'],
+        ['Zakat Fitr platform', 'Citizen-facing digital platform designed for Zakat management.'],
+      ],
+      learningData: [
+        ['Digital learning reach', 'The portfolio cites an educational community of more than 56,000 Instagram and 12,000 Facebook followers, plus interactive Darija courses created in 2026.'],
+        ['Doctoral-exam preparation', '25 online sessions since 2021 dedicated to preparation for the AI doctoral examination.'],
+        ['Data, programming & Web', 'Five Python, data-analysis and AI sessions; two intensive Web-development sessions; declared supervision of 15 international students in data and programming programmes.'],
+        ['Final projects, diaspora & soft skills', 'AI and final-project presentation training, guidance for Algerian diaspora students and five free public-speaking sessions.'],
+      ],
+      engagementsData: [
+        ['30 April 2026', 'University Ferhat Abbas Sétif 1', 'Online training “Economy and data: accelerate your research with Python” for teachers and doctoral students.'],
+        ['21–22 April 2026', 'UFAS Sétif 1 incubator', 'Training “BMC on Steroids”, on using AI as a mentor and virtual investor for project holders.'],
+        ['28–30 March 2026', 'Global Africa Tech', 'Participation in the Africa technology and innovation summit, with a focus on digital sovereignty.'],
+        ['2025', 'Global Entrepreneurship Week / GEN Algeria', 'Speaking on AI integration in startups and a recognition certificate for contribution to GEW 2025 activities.'],
+        ['2025', 'Salon du Métier & Skills Olympics', 'ASR PRO presentation, support for trainees integrating AI, and documented contribution as a computer-science jury member.'],
+        ['2024 & 2020', 'Innovation, speaking & youth', 'Certificate for the national DIY and innovation fair (July 2024), IWD’20 speaking engagement with WTM BBA / GDG BBA, and recognition for a contribution to youth development (March 2020).'],
+      ],
+      documents: ['IAéconomie.pdf', 'BMCAIUFAS.pdf', 'GEWDFPBBA.pdf', 'diplômeetattestations(1).pdf', 'AHMEDHAITHEMBERKANE.eng(1).pdf', 'PortfolioProfessionnel(1)-Copie.pdf'],
+    };
+    const metricData = fr ? [['6', 'documents sources'], ['2014–présent', 'parcours documenté'], ['4', 'solutions mises en avant'], ['6', 'engagements et attestations']] : [['6', 'source documents'], ['2014–present', 'documented career'], ['4', 'featured solutions'], ['6', 'engagements and certificates']];
+    const sectionTitle = title => '<div class="profile-section-title"><span></span><h3>' + title + '</h3></div>';
+    const timeline = copy.experienceData.map(item => '<article class="cv-timeline-item"><div class="cv-year">' + item[0] + '</div><div><h4>' + item[1] + '</h4><p>' + item[2] + '</p></div></article>').join('');
+    const cards = items => items.map(item => '<article class="cv-detail-card"><h4>' + item[0] + '</h4><p>' + item[1] + '</p></article>').join('');
+    const engagement = copy.engagementsData.map(item => '<article class="cv-engagement"><span>' + item[0] + '</span><div><h4>' + item[1] + '</h4><p>' + item[2] + '</p></div></article>').join('');
+    return '<section id="profile" class="profile profile-document p-4 p-lg-5 mt-4"><header class="profile-document-head"><p class="eyebrow">' + copy.section + '</p><h2>M. Haithem BERKANE</h2><p class="profile-role">' + copy.role + '</p><p class="profile-subtitle">' + copy.subtitle + '</p></header><div class="row g-4 mt-1"><div class="col-lg-7"><p class="profile-intro">' + copy.intro + '</p></div><div class="col-lg-5"><aside class="profile-evidence"><strong>' + (fr ? 'Base documentaire' : 'Documentary basis') + '</strong><p>' + copy.evidence + '</p></aside></div></div><div class="row g-2 profile-metrics mt-2">' + metricData.map(item => '<div class="col-6 col-lg-3"><div><strong>' + item[0] + '</strong><span>' + item[1] + '</span></div></div>').join('') + '</div>' + sectionTitle(copy.experience) + '<div class="cv-timeline">' + timeline + '</div>' + sectionTitle(copy.education) + '<div class="row g-3">' + copy.educationData.map(item => '<div class="col-md-6"><article class="cv-qualification"><span>' + item[0] + '</span><h4>' + item[1] + '</h4><p>' + item[2] + '</p></article></div>').join('') + '</div>' + sectionTitle(copy.expertise) + '<div class="row g-3">' + copy.expertiseData.map(item => '<div class="col-md-6">' + cards([item]) + '</div>').join('') + '</div>' + sectionTitle(copy.projects) + '<div class="row g-3">' + copy.projectsData.map(item => '<div class="col-md-6">' + cards([item]) + '</div>').join('') + '</div>' + sectionTitle(copy.learning) + '<div class="row g-3">' + copy.learningData.map(item => '<div class="col-md-6">' + cards([item]) + '</div>').join('') + '</div>' + sectionTitle(copy.engagements) + '<div class="cv-engagements">' + engagement + '</div>' + sectionTitle(copy.sources) + '<div class="profile-sources"><p>' + copy.sourcesText + '</p><div>' + copy.documents.map(item => '<span>' + item + '</span>').join('') + '</div><small>' + copy.note + '</small></div></section>';
   }
 
   function bind(c) {
