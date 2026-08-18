@@ -342,21 +342,19 @@
   function profile() {
     const fr = lang === 'fr';
     const copy = fr ? {
-      section: 'CV & PORTFOLIO DOCUMENTÉ',
-      subtitle: 'Synthèse professionnelle fondée exclusivement sur les six documents PDF communiqués.',
+      section: 'CV & PORTFOLIO',
+      subtitle: 'Un parcours au croisement de l’intelligence artificielle, du développement Web et de l’ingénierie pédagogique.',
       role: 'Architecte logiciel & IA · Consultant senior IT · Expert en ingénierie pédagogique (CIP)',
       intro: 'Consultant, développeur Web & IA, formateur et ingénieur pédagogique. Son parcours réunit l’architecture de solutions, la transformation numérique, la transmission de compétences et l’accompagnement de projets académiques, entrepreneuriaux et institutionnels.',
-      evidence: 'Les informations ci-dessous sont une synthèse des documents transmis. Les coordonnées et données personnelles ne sont pas publiées.',
-      metricsTitle: 'Repères documentés',
+      evidenceLabel: 'Vision professionnelle',
+      evidence: 'Concevoir des solutions utiles, transmettre des compétences et accompagner les projets de la première idée au déploiement.',
+      metricsTitle: 'Repères professionnels',
       experience: 'Parcours professionnel',
       education: 'Formation & qualifications',
       expertise: 'Domaines d’expertise',
       projects: 'Réalisations logicielles & solutions',
       learning: 'Mentorat, e-learning & transmission',
       engagements: 'Engagements, conférences & attestations',
-      sources: 'Sources documentaires utilisées',
-      sourcesText: 'Cette section s’appuie uniquement sur les six PDF transmis : CV anglais, portfolio professionnel, certificats de formation IA/BMC, certificat GEW et dossier de diplômes et attestations.',
-      note: 'Les formulations sont volontairement descriptives : elles présentent les fonctions, projets et attestations cités dans les documents sans ajouter de faits externes.',
       experienceData: [
         ['2021 – présent', 'Consultant indépendant & expert IA / Développeur Web & IA', 'Conception de solutions prédictives et d’aide à la décision ; architectures RAG et modèles de langage privés ; développement de solutions Web & IA ; accompagnement de projets numériques.'],
         ['2019 – présent', 'Formateur & consultant indépendant', 'Conception de programmes de formation, mentorat de startups et de projets étudiants, animation de sessions en ligne en IA, data, programmation, développement Web et prise de parole.'],
@@ -397,23 +395,20 @@
         ['2025', 'Salon du Métier & Olympiades des Métiers', 'Présentation d’ASR PRO, accompagnement de stagiaires sur l’intégration de l’IA et contribution documentée comme membre du jury de la spécialité informatique.'],
         ['2024 & 2020', 'Innovation, prise de parole & jeunesse', 'Certificat lié au salon national du Bricolage et de l’Innovation (juillet 2024), intervention IWD’20 avec WTM BBA / GDG BBA et reconnaissance pour une contribution au développement de la jeunesse (mars 2020).'],
       ],
-      documents: ['IAéconomie.pdf', 'BMCAIUFAS.pdf', 'GEWDFPBBA.pdf', 'diplômeetattestations(1).pdf', 'AHMEDHAITHEMBERKANE.eng(1).pdf', 'PortfolioProfessionnel(1)-Copie.pdf'],
     } : {
-      section: 'DOCUMENTED CV & PORTFOLIO',
-      subtitle: 'Professional summary based exclusively on the six PDF documents supplied.',
+      section: 'CV & PORTFOLIO',
+      subtitle: 'A career at the intersection of artificial intelligence, Web development and learning engineering.',
       role: 'Software & AI architect · Senior IT consultant · Learning-engineering expert (CIP)',
       intro: 'Consultant, Web & AI developer, trainer and learning engineer. His path brings together solution architecture, digital transformation, skills transfer and the support of academic, entrepreneurial and institutional projects.',
-      evidence: 'The information below is a synthesis of the supplied documents. Contact and personal data are not published.',
-      metricsTitle: 'Documented highlights',
+      evidenceLabel: 'Professional vision',
+      evidence: 'Design useful solutions, transfer skills and support projects from the first idea to deployment.',
+      metricsTitle: 'Professional highlights',
       experience: 'Professional experience',
       education: 'Education & qualifications',
       expertise: 'Fields of expertise',
       projects: 'Software achievements & solutions',
       learning: 'Mentoring, e-learning & knowledge transfer',
       engagements: 'Engagements, speaking & certificates',
-      sources: 'Documentary sources used',
-      sourcesText: 'This section relies solely on the six supplied PDFs: English CV, professional portfolio, AI/BMC training certificates, GEW certificate, and diplomas and certificates dossier.',
-      note: 'The wording is deliberately descriptive: it presents the roles, projects and credentials referenced by the documents without adding external facts.',
       experienceData: [
         ['2021 – present', 'Independent consultant & AI expert / Web & AI developer', 'Predictive and decision-support solutions; RAG architectures and private language models; Web & AI solutions; support for digital projects.'],
         ['2019 – present', 'Independent trainer & consultant', 'Training-programme design, startup and student-project mentoring, and online sessions in AI, data, programming, Web development and public speaking.'],
@@ -454,14 +449,13 @@
         ['2025', 'Salon du Métier & Skills Olympics', 'ASR PRO presentation, support for trainees integrating AI, and documented contribution as a computer-science jury member.'],
         ['2024 & 2020', 'Innovation, speaking & youth', 'Certificate for the national DIY and innovation fair (July 2024), IWD’20 speaking engagement with WTM BBA / GDG BBA, and recognition for a contribution to youth development (March 2020).'],
       ],
-      documents: ['IAéconomie.pdf', 'BMCAIUFAS.pdf', 'GEWDFPBBA.pdf', 'diplômeetattestations(1).pdf', 'AHMEDHAITHEMBERKANE.eng(1).pdf', 'PortfolioProfessionnel(1)-Copie.pdf'],
     };
-    const metricData = fr ? [['6', 'documents sources'], ['2014–présent', 'parcours documenté'], ['4', 'solutions mises en avant'], ['6', 'engagements et attestations']] : [['6', 'source documents'], ['2014–present', 'documented career'], ['4', 'featured solutions'], ['6', 'engagements and certificates']];
+    const metricData = fr ? [['2014–présent', 'parcours professionnel'], ['4', 'solutions mises en avant'], ['6', 'engagements majeurs'], ['3', 'langues de travail']] : [['2014–present', 'professional career'], ['4', 'featured solutions'], ['6', 'key engagements'], ['3', 'working languages']];
     const sectionTitle = title => '<div class="profile-section-title"><span></span><h3>' + title + '</h3></div>';
     const timeline = copy.experienceData.map(item => '<article class="cv-timeline-item"><div class="cv-year">' + item[0] + '</div><div><h4>' + item[1] + '</h4><p>' + item[2] + '</p></div></article>').join('');
     const cards = items => items.map(item => '<article class="cv-detail-card"><h4>' + item[0] + '</h4><p>' + item[1] + '</p></article>').join('');
     const engagement = copy.engagementsData.map(item => '<article class="cv-engagement"><span>' + item[0] + '</span><div><h4>' + item[1] + '</h4><p>' + item[2] + '</p></div></article>').join('');
-    return '<section id="profile" class="profile profile-document p-4 p-lg-5 mt-4"><header class="profile-document-head"><p class="eyebrow">' + copy.section + '</p><h2>M. Haithem BERKANE</h2><p class="profile-role">' + copy.role + '</p><p class="profile-subtitle">' + copy.subtitle + '</p></header><div class="row g-4 mt-1"><div class="col-lg-7"><p class="profile-intro">' + copy.intro + '</p></div><div class="col-lg-5"><aside class="profile-evidence"><strong>' + (fr ? 'Base documentaire' : 'Documentary basis') + '</strong><p>' + copy.evidence + '</p></aside></div></div><div class="row g-2 profile-metrics mt-2">' + metricData.map(item => '<div class="col-6 col-lg-3"><div><strong>' + item[0] + '</strong><span>' + item[1] + '</span></div></div>').join('') + '</div>' + sectionTitle(copy.experience) + '<div class="cv-timeline">' + timeline + '</div>' + sectionTitle(copy.education) + '<div class="row g-3">' + copy.educationData.map(item => '<div class="col-md-6"><article class="cv-qualification"><span>' + item[0] + '</span><h4>' + item[1] + '</h4><p>' + item[2] + '</p></article></div>').join('') + '</div>' + sectionTitle(copy.expertise) + '<div class="row g-3">' + copy.expertiseData.map(item => '<div class="col-md-6">' + cards([item]) + '</div>').join('') + '</div>' + sectionTitle(copy.projects) + '<div class="row g-3">' + copy.projectsData.map(item => '<div class="col-md-6">' + cards([item]) + '</div>').join('') + '</div>' + sectionTitle(copy.learning) + '<div class="row g-3">' + copy.learningData.map(item => '<div class="col-md-6">' + cards([item]) + '</div>').join('') + '</div>' + sectionTitle(copy.engagements) + '<div class="cv-engagements">' + engagement + '</div>' + sectionTitle(copy.sources) + '<div class="profile-sources"><p>' + copy.sourcesText + '</p><div>' + copy.documents.map(item => '<span>' + item + '</span>').join('') + '</div><small>' + copy.note + '</small></div></section>';
+    return '<section id="profile" class="profile profile-document p-4 p-lg-5 mt-4"><header class="profile-document-head"><p class="eyebrow">' + copy.section + '</p><h2>M. Haithem BERKANE</h2><p class="profile-role">' + copy.role + '</p><p class="profile-subtitle">' + copy.subtitle + '</p></header><div class="row g-4 mt-1"><div class="col-lg-7"><p class="profile-intro">' + copy.intro + '</p></div><div class="col-lg-5"><aside class="profile-evidence"><strong>' + copy.evidenceLabel + '</strong><p>' + copy.evidence + '</p></aside></div></div><div class="row g-2 profile-metrics mt-2">' + metricData.map(item => '<div class="col-6 col-lg-3"><div><strong>' + item[0] + '</strong><span>' + item[1] + '</span></div></div>').join('') + '</div>' + sectionTitle(copy.experience) + '<div class="cv-timeline">' + timeline + '</div>' + sectionTitle(copy.education) + '<div class="row g-3">' + copy.educationData.map(item => '<div class="col-md-6"><article class="cv-qualification"><span>' + item[0] + '</span><h4>' + item[1] + '</h4><p>' + item[2] + '</p></article></div>').join('') + '</div>' + sectionTitle(copy.expertise) + '<div class="row g-3">' + copy.expertiseData.map(item => '<div class="col-md-6">' + cards([item]) + '</div>').join('') + '</div>' + sectionTitle(copy.projects) + '<div class="row g-3">' + copy.projectsData.map(item => '<div class="col-md-6">' + cards([item]) + '</div>').join('') + '</div>' + sectionTitle(copy.learning) + '<div class="row g-3">' + copy.learningData.map(item => '<div class="col-md-6">' + cards([item]) + '</div>').join('') + '</div>' + sectionTitle(copy.engagements) + '<div class="cv-engagements">' + engagement + '</div></section>';
   }
 
   function bind(c) {
